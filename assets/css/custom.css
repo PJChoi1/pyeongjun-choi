@@ -37,9 +37,99 @@ body {
 	opacity: 0.85;
 }
 
+/* Page title level (Publications, About, CV, Contact, Research Interests) */
+.box.post > header.page-title h2,
+.box.post > header h2,
+.page-heading h2 {
+	font-size: 1.6em;
+	letter-spacing: -0.02em;
+	text-align: left;
+	margin: 0 0 0.35em 0;
+}
+
+.box.post > header.page-title,
+.box.post > header {
+	text-align: left;
+	border-bottom: solid 1px #ddd;
+	padding-bottom: 0.85em;
+	margin-bottom: 1.5em;
+}
+
+.box.post > header.page-title p,
+.box.post > header p {
+	text-align: left;
+	margin: 0;
+	font-size: 0.95em;
+}
+
+/* Subsection level (Journal Articles, Education, ...) — ICNL Projects style */
+.section-heading {
+	text-align: left !important;
+	border: 0 !important;
+	top: 0 !important;
+	position: static !important;
+	margin: 1.75em 0 0.75em 0 !important;
+	padding: 0 !important;
+}
+
+.section-heading h3 {
+	display: block !important;
+	background: none !important;
+	position: static !important;
+	top: auto !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	font-size: 1.15em;
+	font-weight: 700;
+	letter-spacing: -0.01em;
+	text-align: left;
+	color: #252122;
+}
+
+.page-heading {
+	text-align: left !important;
+	border: 0 !important;
+	top: 0 !important;
+	position: static !important;
+	margin: 0 0 1.25em 0 !important;
+	padding: 0 0 0.6em 0 !important;
+	border-bottom: solid 1px #ddd !important;
+}
+
+.page-heading h2 {
+	display: block !important;
+	background: none !important;
+	position: static !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+/* Home: keep Research Interests readable; center CTA buttons under cards */
+.home-heading {
+	text-align: center !important;
+	border-bottom: 0 !important;
+	margin-bottom: 1.5em !important;
+}
+
+.home-heading h2 {
+	text-align: center;
+	font-size: 1.6em;
+}
+
+.home-actions {
+	text-align: center;
+	margin-top: 0.5em;
+}
+
+.home-actions li {
+	display: inline-block;
+	margin: 0.35em;
+}
+
 .pub-list {
 	margin: 0 0 2em 0;
 	padding-left: 1.4em;
+	text-align: left;
 }
 
 .pub-list li {
@@ -54,5 +144,15 @@ body {
 @media screen and (max-width: 736px) {
 	.profile-box .image.featured img {
 		max-width: 200px;
+	}
+
+	.box.post > header h2,
+	.page-heading h2,
+	.home-heading h2 {
+		font-size: 1.35em;
+	}
+
+	.section-heading h3 {
+		font-size: 1.05em;
 	}
 }

@@ -14,18 +14,33 @@ body {
 	background-image: none;
 }
 
+/* Profile photo: cancel Dopetrope featured-image offset; center both axes */
+.profile-box {
+	text-align: center;
+}
+
 .profile-box .image.featured {
-	margin: 0 0 1.5em 0;
+	position: relative !important;
+	left: 0 !important;
+	top: 0 !important;
+	width: 100% !important;
+	margin: 0 auto 1.25em auto !important;
+	display: block;
 }
 
 .profile-box .image.featured img {
 	width: 100%;
-	max-width: 280px;
+	max-width: 240px;
 	margin: 0 auto;
 	display: block;
 	border-radius: 4px;
 	object-fit: cover;
+	object-position: center top;
 	aspect-ratio: 3 / 4;
+}
+
+.profile-box header {
+	text-align: center;
 }
 
 .profile-box header h3 {
@@ -37,14 +52,28 @@ body {
 	opacity: 0.85;
 }
 
-/* Page title level (Publications, About, CV, Contact, Research Interests) */
+.profile-box > p,
+.profile-box footer {
+	text-align: center;
+}
+
+.profile-box footer ul.actions {
+	justify-content: center;
+	text-align: center;
+}
+
+.profile-box footer ul.actions li {
+	display: inline-block;
+}
+
+/* Page title level (Publications, About, CV, Contact) */
 .box.post > header.page-title h2,
 .box.post > header h2,
 .page-heading h2 {
-	font-size: 1.6em;
+	font-size: 1.55em !important;
 	letter-spacing: -0.02em;
 	text-align: left;
-	margin: 0 0 0.35em 0;
+	margin: 0 0 0.35em 0 !important;
 }
 
 .box.post > header.page-title,
@@ -52,38 +81,50 @@ body {
 	text-align: left;
 	border-bottom: solid 1px #ddd;
 	padding-bottom: 0.85em;
-	margin-bottom: 1.5em;
+	padding-top: 0 !important;
+	margin: 0 0 1.25em 0 !important;
 }
 
 .box.post > header.page-title p,
 .box.post > header p {
 	text-align: left;
-	margin: 0;
-	font-size: 0.95em;
+	margin: 0.35em 0 0 0 !important;
+	font-size: 0.95em !important;
 }
 
-/* Subsection level (Journal Articles, Education, ...) — ICNL Projects style */
-.section-heading {
+/* Subsection level — no bar, no background chip, left-aligned, smaller */
+.section-heading,
+header.section-heading,
+#main header.section-heading {
 	text-align: left !important;
 	border: 0 !important;
+	border-top: 0 !important;
+	border-bottom: 0 !important;
 	top: 0 !important;
 	position: static !important;
-	margin: 1.75em 0 0.75em 0 !important;
+	margin: 1.5em 0 0.55em 0 !important;
 	padding: 0 !important;
+	background: transparent !important;
 }
 
-.section-heading h3 {
+.section-heading h3,
+header.section-heading h3,
+#main .section-heading h3,
+#main header.section-heading h3 {
 	display: block !important;
 	background: none !important;
+	background-color: transparent !important;
+	background-image: none !important;
 	position: static !important;
 	top: auto !important;
 	padding: 0 !important;
 	margin: 0 !important;
-	font-size: 1.15em;
+	font-size: 1em !important;
 	font-weight: 700;
 	letter-spacing: -0.01em;
-	text-align: left;
+	text-align: left !important;
 	color: #252122;
+	line-height: 1.35;
 }
 
 .page-heading {
@@ -94,6 +135,7 @@ body {
 	margin: 0 0 1.25em 0 !important;
 	padding: 0 0 0.6em 0 !important;
 	border-bottom: solid 1px #ddd !important;
+	background: transparent !important;
 }
 
 .page-heading h2 {
@@ -104,7 +146,7 @@ body {
 	margin: 0 !important;
 }
 
-/* Home: keep Research Interests readable; center CTA buttons under cards */
+/* Home: Research Interests + centered CTAs */
 .home-heading {
 	text-align: center !important;
 	border-bottom: 0 !important;
@@ -113,7 +155,7 @@ body {
 
 .home-heading h2 {
 	text-align: center;
-	font-size: 1.6em;
+	font-size: 1.55em;
 }
 
 .home-actions {
@@ -127,13 +169,13 @@ body {
 }
 
 .pub-list {
-	margin: 0 0 2em 0;
+	margin: 0 0 1.75em 0;
 	padding-left: 1.4em;
 	text-align: left;
 }
 
 .pub-list li {
-	margin-bottom: 1em;
+	margin-bottom: 0.9em;
 	line-height: 1.55;
 }
 
@@ -149,10 +191,11 @@ body {
 	.box.post > header h2,
 	.page-heading h2,
 	.home-heading h2 {
-		font-size: 1.35em;
+		font-size: 1.3em !important;
 	}
 
-	.section-heading h3 {
-		font-size: 1.05em;
+	.section-heading h3,
+	#main .section-heading h3 {
+		font-size: 0.95em !important;
 	}
 }

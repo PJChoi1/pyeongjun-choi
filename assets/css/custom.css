@@ -1,0 +1,58 @@
+/* Personal homepage tweaks on top of HTML5 UP Dopetrope / ICNL */
+
+/* Fallback when optional Dopetrope tile images are absent */
+body {
+	background-image: none;
+	background-color: #252122;
+}
+
+#footer {
+	background-image: none;
+}
+
+#header {
+	background-image: none;
+}
+
+.profile-box .image.featured {
+	margin: 0 0 1.5em 0;
+}
+
+.profile-box .image.featured img {
+	width: 100%;
+	max-width: 280px;
+	margin: 0 auto;
+	display: block;
+	border-radius: 4px;
+	object-fit: cover;
+	aspect-ratio: 3 / 4;
+}
+
+.profile-box header h3 {
+	margin-bottom: 0.25em;
+}
+
+.profile-box header p {
+	margin: 0 0 1em 0;
+	opacity: 0.85;
+}
+
+.pub-list {
+	margin: 0 0 2em 0;
+	padding-left: 1.4em;
+}
+
+.pub-list li {
+	margin-bottom: 1em;
+	line-height: 1.55;
+}
+
+#banner header p {
+	letter-spacing: 0.02em;
+}
+
+@media screen and (max-width: 736px) {
+	.profile-box .image.featured img {
+		max-width: 200px;
+	}
+}

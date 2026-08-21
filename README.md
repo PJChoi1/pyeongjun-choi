@@ -12,6 +12,10 @@ Open `index.html` in a browser, or serve the folder:
 npx --yes serve .
 ```
 
+## Live site
+
+https://pjchoi1.github.io/pyeongjun-choi/
+
 ## GitHub Pages
 
 This repository is configured for GitHub Pages from the `main` branch root.

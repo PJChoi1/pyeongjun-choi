@@ -199,3 +199,30 @@ header.section-heading h3,
 		font-size: 0.95em !important;
 	}
 }
+
+
+/* CV: tighten space under review labels */
+.review-label {
+	margin-bottom: 0.25em !important;
+}
+
+.review-label + ul {
+	margin-top: 0 !important;
+}
+
+/* Publications: venue prestige markers */
+.venue-highlight {
+	display: inline;
+	background: #ffe8ec;
+	color: #9b1c2e;
+	font-weight: 700;
+	padding: 0.1em 0.4em;
+	border-radius: 3px;
+	white-space: normal;
+}
+
+.venue-note {
+	display: inline;
+	color: #555;
+	font-weight: 600;
+}

@@ -14,6 +14,23 @@ body {
 	background-image: none;
 }
 
+/* Prefer black body text; author name stays bold */
+#main,
+#main .box,
+#main .box.post,
+#main .pub-list,
+#main p,
+#main li {
+	color: #252122;
+}
+
+#main .pub-list strong {
+	font-weight: 700;
+	color: #252122;
+}
+
+
+
 /* Profile photo: cancel Dopetrope featured-image offset; center both axes */
 .profile-box {
 	text-align: center;
@@ -210,19 +227,10 @@ header.section-heading h3,
 	margin-top: 0 !important;
 }
 
-/* Publications: venue prestige markers */
-.venue-highlight {
-	display: inline;
-	background: #ffe8ec;
-	color: #9b1c2e;
+/* Publications: soft red accent like ICNL (no background chip) */
+.venue-accent {
+	color: #d52349;
 	font-weight: 700;
-	padding: 0.1em 0.4em;
-	border-radius: 3px;
-	white-space: normal;
-}
-
-.venue-note {
-	display: inline;
-	color: #555;
-	font-weight: 600;
+	background: none;
+	padding: 0;
 }
